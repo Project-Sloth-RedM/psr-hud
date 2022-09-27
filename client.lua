@@ -931,7 +931,7 @@ CreateThread(function()
             if not IsPedOnMount(PlayerPedId()) or not IsPedOnVehicle(PlayerPedId())then
                 updatePlayerHud({
                     show,
-                    GetEntityHealth(player) / 7, --health for some reason is 700 | i thought it was 300
+                    GetEntityHealth(player) / 3, -- health native amount is 300
                     playerDead,
                     Citizen.InvokeNative(0x2CE311A7, player), -- armor
                     thirst,
@@ -973,7 +973,7 @@ CreateThread(function()
                 
                 updatePlayerHud({
                     show,
-                    GetEntityHealth(player) / 7,--health for some reason is 700 | i thought it was 300
+                    GetEntityHealth(player) / 3, -- health native amount is 300
                     playerDead,
                     Citizen.InvokeNative(0x2CE311A7, player),
                     thirst,
